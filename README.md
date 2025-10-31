@@ -1,54 +1,44 @@
-# TaskFlow
+# TaskFlow - Smart Task Management
 
-TaskFlow is a modern, responsive task management app built with **React** and **TailwindCSS**, featuring drag-and-drop task management, dark/light mode, persistent storage, productivity stats, and a sleek UI optimized for both desktop and mobile. The app is deployed on **Vercel**.
+TaskFlow is a modern, responsive task management web app that lets you add, edit, delete, filter, and visualize tasks. It supports light & dark modes, drag-and-drop reordering, and interactive charts for tracking progress.
+
+---
 
 ## Features
 
--   Create, edit, and delete tasks
--   Categorize tasks (`To Do`, `In Progress`, `Done`)
--   Mark tasks as completed
--   Filter tasks by category or priority
--   Drag-and-drop task reordering (`@hello-pangea/dnd`)
--   View productivity stats (completed vs pending tasks) with charts
--   Persistent data using **LocalStorage**
--   Light/Dark mode toggle (dynamic theme with custom colors)
--   Fully responsive layout
--   Smooth hover and drag animations
--   Footer with copyright, developer name, and dynamic year
+-   Add, edit, and delete tasks inline
+-   Mark tasks as complete
+-   Filter tasks by category and priority
+-   Drag-and-drop task reordering
+-   Interactive charts for task statistics
+-   Light & Dark mode toggle
+-   Persistent storage with LocalStorage
+-   Responsive design for desktop and mobile
+-   Open Graph & Twitter Cards for sharing
 
-## Styling & Theme
+---
 
--   **Light mode:** soft whites with blue accents for buttons
--   **Dark mode:** ChatGPT-inspired palette (`#444654` for backgrounds, `#10a37f` for checkboxes)
--   Buttons, inputs, and hover effects have subtle animations for polish
--   All components, including **task list, filters, charts, header, and footer**, use this color palette
+## Demo
+
+Live link: [https://taskflow-woad-omega.vercel.app](https://taskflow-woad-omega.vercel.app)
+
+---
+
+## Screenshots
+
+![Light Mode](./screenshots/light-mode.png)
+![Dark Mode](./screenshots/dark-mode.png)
+
+---
 
 ## Tech Stack
 
--   React 18+ (functional components, hooks)
--   TailwindCSS for utility-first styling
--   LocalStorage for task persistence
--   Recharts for task statistics visualization
--   `@hello-pangea/dnd` for drag-and-drop functionality
--   Vercel for deployment
-
-## Project Structure
-
-```
-src/
-├── assets/ # Logo assets (dark/light)
-├── components/
-│ ├── Header.jsx # Header with logo, title, theme toggle
-│ ├── TaskForm.jsx # Task input form
-│ ├── TaskList.jsx # Task list with drag-and-drop
-│ ├── TaskFilters.jsx # Category/priority filters
-│ ├── StatsChart.jsx # Productivity charts
-│ └── Footer.jsx # Footer with copyright info
-├── utils/
-│ └── storage.js # LocalStorage helpers
-├── App.jsx # Main app component
-└── index.js # App entry point
-```
+-   React 19 (hooks & functional components)
+-   Tailwind CSS
+-   @hello-pangea/dnd (drag-and-drop)
+-   Recharts (charts & stats)
+-   React Helmet (meta tags & SEO)
+-   Vercel (deployment)
 
 ## 📦 Installation
 
