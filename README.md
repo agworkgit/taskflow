@@ -44,7 +44,7 @@ Live link: [https://taskflow-woad-omega.vercel.app](https://taskflow-woad-omega.
 
 ```bash
 # Clone the repo
-git clone https://github.com/<your-username>/taskflow.git
+git clone https://github.com/agworkgit/taskflow.git
 cd taskflow
 ```
 
