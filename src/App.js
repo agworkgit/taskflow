@@ -60,7 +60,7 @@ function App() {
     <>
       <Helmet>
         <title>TaskFlow - Smart Task Management</title>
-        <link rel="icon" type="image/png" href="/assets/favicon.png" />
+        <link rel="icon" type="image/png" href="%PUBLIC_URL%/assets/favicon.png" />
         <meta name="description" content="Manage, track, and visualize your tasks with TaskFlow." />
         <meta property="og:title" content="TaskFlow - Smart Task Management" />
         <meta property="og:description" content="Manage, track, and visualize your tasks with TaskFlow." />
