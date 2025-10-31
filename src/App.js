@@ -60,10 +60,18 @@ function App() {
     <>
       <Helmet>
         <title>TaskFlow - Smart Task Management</title>
+        <link rel="icon" type="image/png" href="/assets/favicon.png" />
         <meta name="description" content="Manage, track, and visualize your tasks with TaskFlow." />
         <meta property="og:title" content="TaskFlow - Smart Task Management" />
         <meta property="og:description" content="Manage, track, and visualize your tasks with TaskFlow." />
-        <meta property="og:image" content="%PUBLIC_URL%/assets/og-logo.png" />
+        <meta
+          property="og:image"
+          content={darkMode ? "/assets/logo-dark-theme.png" : "/assets/logo-light-theme.png"}
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="TaskFlow - Smart Task Management" />
+        <meta name="twitter:description" content="Manage, track, and visualize your tasks with TaskFlow." />
+        <meta name="twitter:image" content="/assets/og-logo.png" />
       </Helmet>
       <div className="min-h-screen bg-gray-50 dark:bg-[#343541] transition-colors">
         <Header darkMode={darkMode} toggleTheme={toggleTheme} />
