@@ -3,6 +3,12 @@ import TaskList from './TaskList';
 import StatsChart from './StatsChart';
 import StatusFilter from './StatusFilter';
 
+const initialTasks = [
+    { id: 1, title: 'Learn React', completed: false },
+    { id: 2, title: 'Build Dashboard', completed: true },
+    { id: 3, title: 'Test Components', completed: false },
+];
+
 export default function Dashboard() {
     const [tasks, setTasks] = useState(initialTasks);
     const [filter, setFilter] = useState('all'); // e.g. "completed", "pending", "all"
