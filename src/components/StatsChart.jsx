@@ -1,4 +1,5 @@
-import React from 'react';
+// Reflects the currently filtered data
+
 import { PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
 
 const StatsChart = ({ tasks }) => {

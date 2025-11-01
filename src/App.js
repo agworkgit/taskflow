@@ -89,7 +89,13 @@ function App() {
             deleteTask={deleteTask}
             setTasks={setTasks}
           />
-          <StatsChart tasks={tasks} />
+          <StatsChart
+            tasks={
+              categoryFilter === 'All' && priorityFilter === 'All'
+                ? tasks
+                : filteredTasks
+            }
+          />
         </main>
         <Footer />
       </div>

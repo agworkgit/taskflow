@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+// Additional filtering inside the list
+
+import { useState } from 'react';
 import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 
 const TaskList = ({ tasks, updateTask, deleteTask, setTasks }) => {
