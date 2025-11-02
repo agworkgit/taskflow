@@ -23,7 +23,7 @@ export default function Dashboard() {
     return (
         <div className='dashboard'>
             <StatusFilter activeFilter={filter} onChange={setFilter} />
-            <StatsChart data={filteredTasks} />
+            <StatsChart data={filteredTasks} categoryFilter={filter} />
             <TaskList tasks={filteredTasks} onUpdate={setTasks} />
         </div>
     );
